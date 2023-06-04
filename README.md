@@ -70,6 +70,17 @@ Body (raw, JSON):
 
 ```
 
-
-
-
+## If access denied after retrying:
+Open a new tab.
+Type the url in the search box:
+```
+chrome://net-internals/#dns
+```
+Hit the “Clear host cache” button.
+And you are done as DNS is flushed out.
+Open another tab and type URL:
+```
+chrome://net-internals/#sockets
+```
+Click on the “Flush socket pools” button.
+Close the Google chrome tab.
