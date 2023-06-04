@@ -1,0 +1,30 @@
+<html>
+   <body>
+
+      <h1>Weclome! 
+         {% if user: %}
+         {{user}}
+         {% endif %}
+      </h1>
+
+
+      <table style="margin-left: 20px;">
+         <th>
+            <tr>    
+                 <td><h3>Permissions</h3></td>
+            </tr>
+         </th>
+  
+         {% for prm in permisssions %}
+           
+         <tr>
+             <td>{{prm['name']}}</td>
+             
+         {%endfor%}
+           
+         </tr>
+           
+         </table>
+      
+   </body>
+</html>

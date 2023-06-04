@@ -1,0 +1,24 @@
+<html>
+   <body>
+      
+      <div id="login">
+         <h1>Weclome! Please login</h1>
+
+         {% if ne: %}
+         <h3>User doesn't exist</h3>
+         {% endif %}
+
+
+         <form action = "http://127.0.0.1:5000/api/login" method = "post">
+            <p>Enter Username/Email:</p>
+            <p><input type = "text" name = "name" /></p>
+            <p>Enter Password:</p>
+            <p><input type = "password" name = "pass" /></p>
+            <p><input type = "submit" value = "Login" /></p>
+         </form> 
+      </div>
+         
+      <input id="bttn_signup" type="button" name="signup" value="Signup" onclick='window.location.assign("/signup?se=")'/>
+
+   </body>
+</html>

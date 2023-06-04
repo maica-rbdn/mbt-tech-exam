@@ -1,0 +1,27 @@
+<html>
+   <body>
+
+      <div id="signup" style="display:block">
+         
+         <h1>Sign up</h1>
+
+         {% if se: %}
+         <h3>Invalid User</h3>
+         {% endif %}
+
+
+         <form action = "http://127.0.0.1:5000/api/signup" method = "post">
+            <p>Enter Username:</p>
+            <p><input type = "text" name = "name" /></p>
+            <p>Enter Email:</p>
+            <p><input type = "text" name = "email" /></p>
+            <p>Enter Password:</p>
+            <p><input type = "password" name = "password" /></p>
+            <p><input type = "submit" value = "Signup" /></p>
+         </form>  
+
+         <input id="bttn_login" type="button" name="login" value="Back to Login" onclick='window.location.assign("/?ne=")'/>
+      </div>
+
+   </body>
+</html>
