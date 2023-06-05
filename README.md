@@ -7,7 +7,14 @@ App needed to be installed: Postman => for creating and fetching roles, permissi
 [ERD](https://drive.google.com/file/d/1m2gEGQEVJLg7JmyPKP2T86vOfB8gwQVD/view?usp=sharing)
 
 ## Install the following:
+You may use virtual env
 
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Then install the following
 ```
 pip3 install flask
 pip3 install Flask Flask-SQLAlchemy
@@ -19,7 +26,8 @@ flask --app app run
 ```
 
 ## After succcessful run:
-Go to the localhost to create the local db. Required to be able to create all needed database.
+Go to the localhost to create the local db => Required to be able to create all needed database.
+If an error occurred, try to reload the page again.
 Take note: A test user with no mappings will be created once localhost/ has been called
 
 Local host: http://127.0.0.1:5000
@@ -84,3 +92,5 @@ chrome://net-internals/#sockets
 ```
 Click on the “Flush socket pools” button.
 Close the Google chrome tab.
+
+
